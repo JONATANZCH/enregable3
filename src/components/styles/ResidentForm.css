@@ -6,13 +6,9 @@
     align-items: center;
     gap: 10px;
     width: min(750px, 100%);
-}
-@media(max-width: 410px) {
-    .dimensionFilter {
-        overflow-y: hidden;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-    }
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .dimensionFilter__icon {
