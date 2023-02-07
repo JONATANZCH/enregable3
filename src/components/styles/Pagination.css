@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 40px;
+    max-width: 1200px;
+    cursor: pointer;
+}
+.pagination__li {
+    align-items: center;
+    background-color: #030f11;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 300ms ease-out;
+}
+.pagination__li:hover {
+    transform: scale(0.85);
+    border: solid chartreuse;
+}
+
+@media(min-width: 992px) {
+        .pagination {
+        overflow-x: hidden;
+    }
+}
+
+.currentPage {
+    border: solid chartreuse;
+}
+
+#light .currentPage {
+    border: solid rgb(255, 0, 76);
+}
+#light .pagination__li:hover {
+    border: solid rgb(255, 0, 76);
+}
