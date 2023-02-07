@@ -11,6 +11,21 @@
     scroll-snap-type: x mandatory;
 }
 
+.dimensionFilter::-webkit-scrollbar{
+    width: 12px;
+}
+.dimensionFilter::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+.dimensionFilter::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 20px rgba(127, 255, 0);
+}
+#light .dimensionFilter::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 100px rgb(255, 0, 76);
+}
+
 .dimensionFilter__icon {
     font-size: 15px;
     border: none;

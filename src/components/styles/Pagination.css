@@ -10,6 +10,22 @@
     max-width: 1200px;
     cursor: pointer;
 }
+.pagination::-webkit-scrollbar{
+    width: 12px;
+}
+.pagination::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+.pagination::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 20px rgba(127, 255, 0);
+}
+
+#light .pagination::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 100px rgb(255, 0, 76);
+}
+
 .pagination__li {
     align-items: center;
     background-color: #030f11;
@@ -22,11 +38,6 @@
     border: solid chartreuse;
 }
 
-@media(min-width: 992px) {
-        .pagination {
-        overflow-x: hidden;
-    }
-}
 
 .currentPage {
     border: solid chartreuse;
